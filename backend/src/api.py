@@ -97,7 +97,6 @@ def get_drinks_detail():
 def create_drink():
     try:
         data = request.get_json()
-        data['recipe'] = [data['recipe']]
         data['recipe'] = json.dumps(data['recipe'])
         drink = Drink(**data)
         drink.insert()
