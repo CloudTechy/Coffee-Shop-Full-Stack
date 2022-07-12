@@ -3,6 +3,7 @@ venv/
 __pycache__/
 test.db
 database/database.db
+database.db
 .env
 node_modules/
 
